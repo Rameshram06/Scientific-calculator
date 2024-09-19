@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f1f1;
+}
+
+.calculator {
+    background-color:#d4d2d2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(160, 123, 123, 0.2);
+}
+
+#display {
+    width: 94%;
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 24px;
+    text-align: right;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: aliceblue;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #615c5c;
+}
+
+button:active {
+    background-color: #513131;
+}
+
+
+/* Style for the toggle button */
+#toggle-btn {
+    padding: 20px;
+    font-size: 18px;
+    background-color:aqua;
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	grid-column: span 2;
+	transition: background-color 0.2s;
+    
+}
+#operator{
+    background-color: bisque;
+}
+
+#clear {
+    background-color:orange;
+    color: #f4f1f1;
+}
+#clear:hover {
+    background-color: #615c5c;
+}
+#clear:active {
+    background-color: #513131;
+}
+#toggle-btn:hover {
+    background-color: #615c5c;
+}
+
+#toggle-btn:active {
+    background-color: #513131;
+}
